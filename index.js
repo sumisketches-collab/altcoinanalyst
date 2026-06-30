@@ -93,9 +93,9 @@ async function analyzePair(pair) {
 
         // --- SİNYAL KOŞULLARI ---
         if (
-            lastRsi < 20 &&
-            lastStoch1K < 10 &&
-            lastStoch2K < 10 &&
+            lastRsi < 30 &&
+            lastStoch1K < 20 &&
+            lastStoch2K < 20 &&
             lastStochRsiD <= 0.01 // Tam 0 matematiksel olarak nadir yakalanır, 0.01 altı 0'a değmiş kabul edilir
         ) {
             const message = `
